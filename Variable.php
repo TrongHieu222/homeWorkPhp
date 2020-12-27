@@ -52,9 +52,9 @@ echo '<br/>';;
 ?>
 4. For each
 <?php
-$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+$aAge = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 
-foreach($age as $x => $val) {
+foreach($aAge as $x => $val) {
     echo "$x = $val<br>";
 }
 ?>

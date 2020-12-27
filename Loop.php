@@ -12,9 +12,14 @@
 <ol>
     <div class="content2">
         <h1>vẽ tam giác</h1>
-        <? for ($i=0;$i<=10;$i++)
-            {
-        ?>
+            <?php
+            for($i = 0; $i < 20; $i++) {
+                for($j = (20 - $i); $j < 20; $j++) {
+                    echo "*";
+                }
+                echo "<br>";
+            }
+            ?>
     </div>
 </ol>
 

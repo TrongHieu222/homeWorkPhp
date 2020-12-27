@@ -13,35 +13,30 @@ $n1 = "";
 $n2 = "";
 $caculate = "";
 
-var_dump($_POST);
-if (isset($_POST["number1"]) && isset($_POST["number2"]) && isset($_POST["caculate"] )) {
 
-    $n1 = $_POST["number1"];
-    $n2 = $_POST["number2"];
-    $caculate = $_POST["caculate"];
+if (isset($_POST['number1']) && isset($_POST['number2']) && isset($_POST['caculate'] )) {
+
+    $n1 = $_POST['number1'];
+    $n2 = $_POST['number2'];
+    $caculate = $_POST['caculate'];
 
 }
 ?>
-
     <div class="content"></div>
     <h1>Mô phỏng máy tính điện tử</h1>
     <form action="#" method="post" name="main-form">
-
         <div class="row">
-            <span> Số thứ nhất</span>
-            <input type="text" name="number 1" value=" <?php  echo $n1;?>">
+            <label for="">Số thứ nhất</label>
+            <input type="text" name="number1" value="<?php  echo $n1; ?>">
         </div>
-
         <div class="row">
-            <span> Phép toán</span>
-            <input type="text" name="caculate" value=" <?php echo $n2;?>">
+            <label for="">Phép toán</label>
+            <input type="text" name="caculate" value="<?php echo $n2;?>">
         </div>
-
         <div class="row">
-            <span> Số thứ hai</span>
+            <label for="">Số thứ hai</label>
             <input type="text" name="number2">
         </div>
-
         <div class="row">
             <input type="submit" name="xemketqua" value="xemketqua">
         </div>
