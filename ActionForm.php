@@ -1,7 +1,11 @@
 <?php
-$username = $_POST['email'];
-$password = $_POST['password'];
+session_start();
+$_SESSION["userName"] = "admin";
+$_SESSION["passWord"] = "123";
 
-$result = ($username == 'admin' && $password == '123456') ? "Dang nhap thanh cong" : "Dang nhap that bai";
+
+$userName = $_POST['username'];
+$passWord= $_POST['passWord'];
+
+$result =($userName == 'admin' && $passWord = 123) ? "xin chao wiloke": "Dang nhap that bai";
 echo $result;
-?>
